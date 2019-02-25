@@ -7,7 +7,7 @@ import com.zoologico.atributos.Sexo;
  * 
  * @author Murilo
  */
-public class Animal {
+public abstract class Animal {
 
     /**
      * Quantidade de massa em KiloGrama.
@@ -22,28 +22,34 @@ public class Animal {
     */
     private static Sexo sexo;
     
-    public static float getPeso() {
+    private static float getPeso() {
         return peso;
     }
 
-    public static void setPeso(float peso) {
+    private static void setPeso(float peso) {
         Animal.peso = peso;
     }
 
-    public static float getAltura() {
+    private static float getAltura() {
         return altura;
     }
 
-    public static void setAltura(float altura) {
+    private static void setAltura(float altura) {
         Animal.altura = altura;
     }
 
-    public static Sexo getSexo() {
+    private static Sexo getSexo() {
         return sexo;
     }
 
-    public static void setSexo(Sexo sexo) {
+    private static void setSexo(Sexo sexo) {
         Animal.sexo = sexo;
+    }
+    
+    public void Animal(float peso, float altura, Sexo sexo) {
+        setPeso(peso);
+        setAltura(altura);
+        setSexo(sexo);
     }
 
     /**

@@ -25,9 +25,6 @@ public class Flamingo extends Ave {
     }
     
     public Flamingo(float peso, float altura, Sexo sexo) {
-        setPeso(peso);
-        setAltura(altura);
-        setSexo(sexo);
     }
     
 }
